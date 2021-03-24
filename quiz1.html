@@ -1,26 +1,10 @@
 <html> 
 <head>   
    <title>My Document</title>   
-   <script type="text/javascript">   
-	function show_change_button(){
-		var btn = document.createElement("BUTTON");   
-		btn.innerHTML = "Change this document"; 
-		document.body.appendChild(btn);
-		btn.addEventListener("click", 
-		function(){var header = document.getElementById("cgu");             
-		  header.innerHTML = "CSIE@CGU";  		  
-		  list = document.getElementById('list')
-		  ref = document.getElementById("try_it"),
-		  haskell = document.createElement('p');
-		  haskell.id = 'haskell';
-		  haskell.innerText = "怎麼那麼棒！！.";
-		  list.insertBefore(haskell, ref)
-		});
-	}
-    </script> 
+   <script src="quiz1.js"></script> 
  </head> 
  <body id ="list">
-	<input type="button" value="try it"onclick="show_change_button()" id="try_it">
+	<input type="button" value="try it"onclick="append_change_button()" id="try_it">
     <h1 id="cgu">CGU</h1>   
     <p id="good">好棒棒</p>
   </body> 
